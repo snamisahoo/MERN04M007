@@ -1,0 +1,162 @@
+/*
+(2)Combine selector -
+1=>Descedant selector.
+2=>Direct Child selector.
+3=>Adjacent sibling selector
+4=>General sibling slector
+*/
+
+/*1=>Descedant selector - can target dirct and indirect child*/
+
+#parent p{
+    background-color: rgb(127, 169, 170);
+}
+/* 2=>Direct Child selector.*/
+
+#parent>p{
+    color: bisque;
+}
+
+/* 3=>Adjacent sibling selector*/
+
+#parent+p{
+    background-color: blueviolet;
+}
+
+#parent~p{
+    color: rgb(157, 209, 104);
+}
+
+/*(3)Attribute Selector*/
+
+h1[id="heading"]{
+    background-color: blue;
+}
+
+/*(4)Psudo class selector
+1=>hover
+2=>active
+3=>focus
+4=>visited
+5=>first child
+6=>last child
+7=>nth child
+*/
+
+/*1=>hover*/
+#box{
+    width: 200px;
+    height: 200px;
+    border: 2px solid blue;
+}
+#box:hover{
+    background-color: cornflowerblue;
+}
+
+/*2=>active*/
+#box:active{
+    background-color: rgb(236, 236, 129);
+}
+
+/*3=>focus*/
+input:focus{
+    background-color: darkcyan;
+}
+
+/*4=>visited*/
+a:visited{
+    background-color: brown;
+}
+
+/*5=>first child*/
+ul li:first-child{
+    background-color: blueviolet;
+}
+
+/*6=>last child*/
+ul li:last-child{
+    background-color: rgb(206, 124, 124);
+}
+
+/*7=>nth child -----(an+b)*/
+ul li:nth-child(n+2):nth-child(-n+5){
+    background-color: aquamarine;
+}
+/*(5)Pseudo element selector
+1=>after
+2=>before
+3=>first line
+4=>first letter
+5=>selected
+*/
+
+/*1=>after*/
+h2::after{
+    content: " Of the about section";
+}
+
+/*2=>before*/
+h2::before{
+    content: "This ";
+}
+
+/*3=>first line*/
+#box::first-line{
+    background-color: rgb(158, 158, 232);
+}
+
+/*4=>first letter*/
+#box::first-letter{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/*5=>selected*/
+#box::selection{
+    background-color: aquamarine;
+}
+
+
+/* 
+COLOR
+1=>RGB(red(255),green,blue)
+2=>RGBA(red,green,blue,alpha)
+*/
+
+h2{
+    color: rgb(255,255,100);
+}
+
+h3{
+    color: rgba(255,200,200,0.99);
+}
+
+h4{
+    color: #d05555;
+}
+
+/*For color reference - color hunt*/
+
+
+.box-model{
+    width: 200px;
+    height: 200px;
+    border: 2px solid green;
+
+    /*padding-top: 40px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-left: 10px;*/
+
+    padding: 40px 30px 20px 10px;
+
+    /*padding: 40px;
+    border-width:20 ;
+    border-style:solid ;
+    border-color:pink ;*/
+
+    border: 2px solid pink;
+
+    margin: 0 20px ;
+
+}
