@@ -1,0 +1,96 @@
+#box{
+    width: 100px;
+    height: 100px;
+    border: 2px solid pink;
+}
+
+p{
+    background-color: rgb(201, 127, 201);
+    display: inline;
+}
+
+b{
+    background-color: skyblue;
+    display: block;
+    height: 200px;
+    width: 300px;
+}
+
+strong{
+    background-color: beige;
+    display: inline-block;
+    width: 200px;
+    height: 300px;
+}
+
+h1{
+    background-color: khaki;
+    display: inline-block;
+}
+
+#containerbox{
+    width: 300px;
+    height: 300px;
+    border: 2px solid green;
+    /* display: flex;
+    flex-direction: column;
+    gap: 2px; */
+    /*justify-content: center; only work on the main axis */
+    /*align-items: center; work on both the axis*/
+    /* justify-content: space-around; */
+    /* justify-content: space-between;
+    justify-content: space-evenly; */
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+.box{
+    /* width: 50px;
+    height: 50px; */
+    border: 1px solid blue;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* #box1{
+    flex-grow:3;
+}
+
+#box2{
+    flex-shrink: 2;
+} */
+
+#box1{
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background-color: mediumpurple;
+
+}
+
+#box2{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: cadetblue;
+}
+
+#box6{
+    grid-row-start:2;
+    grid-row-end: 4;
+    grid-column-start: 4; 
+    background-color:cadetblue ;
+}
+
+.box1{
+    background-color: cadetblue;
+}
+
+.box4,.box8{
+    background-color: darkgoldenrod;
+}
+
+.box3,.box5,.box7{
+    background-color: brown;
+}
