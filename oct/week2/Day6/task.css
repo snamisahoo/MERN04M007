@@ -1,59 +1,37 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: auto;
 }
-body {
-  background-color: #ffffff;
-  color: #0b1030;
+.container{
+  width: 1200px;
+  height: 600px;
+  background-color: rgba(196, 196, 196, 0.137);
+  border-radius: 10px;
+  position: absolute;
 }
-
-/* Header */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 60px;
-  position: fixed;
-  backdrop-filter: blur(4px);
+.container .signup{
+  position:absolute ;
+  top: 50px;
+  right: 20px;
 }
-.logo {
-  color: #1a237e;
-  width: 100px;
+ .signup {
+  /* height: 10px;
+  width: auto; */
+  border-radius: 6px;
+  text-align: center;
+  background-color: rgb(234, 172, 205);
 }
-
-nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-}
-
-.signup {
-  border: 1px solid #ccc;
-  padding: 6px 14px;
-  border-radius: 20px;
-}
-
-.signup:hover {
-  background-color: #ff5a5f;
-  color: #fff;
-}
-/* Left section */
-.left {
-  margin-top: 50px;
-  margin: 10px;
-  top: 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
+.container .right-child{
   width: 1000px;
-  height: 700px;
-  background-color: #f8ebe8;
-  padding: 60px;
-  border-radius: 10px 0 40px 0;
+  height: 550px;
+  background-color: rgb(235, 211, 219);
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  border-radius: 10px;
 }
-
 .role-buttons {
   display: flex;
   gap: 10px;
@@ -64,7 +42,7 @@ nav a {
 
 .role-buttons button {
   border: none;
-  padding: 8px 18px;
+  /* padding: 8px 18px; */
   border-radius: 20px;
 }
 
@@ -84,10 +62,12 @@ h1 {
 
 .search-box {
   background: #fff;
-  padding: 15px;
+  /* padding: 15px; */
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  width: 18cm;
+  width: 15cm;
+  position: absolute;
+  left: 20px;
 }
 
 .search-top {
@@ -123,39 +103,26 @@ h1 {
   border: 1px solid #ccc;
   border-radius: 8px;
 }
-/* Right section */
-.right {
-  position: absolute;
-  top: 100px;
-  right: 200px;
+header h2{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: navy;
 }
-main .right img{
-  top: 100px;
-  right: 100px;
+header {
+  display: flex;
+  justify-content: space-between;
 }
-
-.right img {
+header nav a{
+  text-decoration: none;
+  color: navy;
+}
+.container .left-child img{
   width: 400px;
-  height: 500px;
-  border-radius: 15px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-}
-
-/* .tag {
+  height: 450px;
+  border-radius: 10px;
   position: absolute;
-  background: #fff;
-  padding: 6px 10px;
-  border-radius: 20px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-  font-size: 0.8rem;
+  top: 100px;
+  right: 50px;
 }
-
-.landlord {
-  top: 20px;
-  left: 20px;
+/* .container .left-child{
+  border-radius: 20px; */
 }
-
-.tenant {
-  bottom: 20px;
-  right: 20px;
-} */

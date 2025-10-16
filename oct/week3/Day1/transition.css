@@ -1,0 +1,71 @@
+/* Transition :
+1=>property
+2=>duration
+3=>timing function
+4=>delay */
+
+/* property name/duration/timing fuction/delay */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    position: relative;
+
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(169, 126, 94);
+    /* margin: auto; 
+    transition-property: all;
+    transition-duration: 2s; */
+    /* transition-timing-function: ease; ease, ease-in, ease-out, ease-out-in */
+    /* transition-delay: 1s; */
+    position: absolute;
+    animation-name: movement;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+    animation-iteration-count: 5;
+    animation-direction: reverse
+
+
+}
+/* .box:hover{
+    background-color: darkcyan;
+    transform: translateX(500px);
+} */
+
+@keyframes movement {
+    0%{
+left: 0;
+top: 0;
+background-color: blue;
+    }
+    25%{
+left: 350px;
+top: 0px;
+background-color: blueviolet;
+    }
+    50%{
+left: 350px;
+top: 350px;
+background-color: burlywood;
+    }
+    75%{
+left: 0;
+top: 350px ;
+background-color: chartreuse;
+    }
+    100%{
+top: 0px;
+left: 0px;
+background-color: cornflowerblue;
+    }
+}
