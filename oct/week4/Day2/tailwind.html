@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+      }
+      @media (width<=480px) {
+        .container {
+          background-color: blue;
+        }
+      }
+      @media (width>=480px) and (width<=760px) {
+        .container {
+          background-color: pink;
+        }
+      }
+      .home-container{
+        width: 1024px;
+        height: 500px;
+        border: 2px solid red;
+      }
+      .home-left{
+        width: 60%;
+        height: 100%;
+      }
+      .home-right{
+        width: 40%;
+        height: 100%;
+        background-color: ;
+
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container"></div>
+    <div class="home-container">
+        <div class="home-right"></div>
+        <div class="home-left"></div>
+    </div>
+  </body>
+</html>
